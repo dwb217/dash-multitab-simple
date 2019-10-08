@@ -14,7 +14,7 @@ tab_3_layout = html.Div([
                 max=5,
                 step=0.1,
                 marks={i:str(i) for i in range(0, 6)},
-                value=5,
+                value=3,
             ),
         ], className='four columns'),
         html.Div([
