@@ -11,7 +11,7 @@ tab_2_layout = html.Div([
             dcc.RadioItems(
                 id='page-2-radios',
                 options=[{'label': i, 'value': i} for i in ['Metro', 'Subway', 'Bart']],
-                value='Orange',
+                value='how',
                 style = dict(
                     width = '70%',
                     display = 'inline-block',
