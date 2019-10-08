@@ -4,13 +4,13 @@ import dash_html_components as html
 from dash.dependencies import Input, Output
 
 tab_2_layout = html.Div([
-    html.H1('Page 2'),
+    html.H1('Transport'),
     html.Div([
         html.Div([
             html.H6('Select one:'),
             dcc.RadioItems(
                 id='page-2-radios',
-                options=[{'label': i, 'value': i} for i in ['Orange', 'Blue', 'Red']],
+                options=[{'label': i, 'value': i} for i in ['Metro', 'Subway', 'Bart']],
                 value='Orange',
                 style = dict(
                     width = '70%',
