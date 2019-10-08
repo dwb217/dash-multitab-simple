@@ -60,19 +60,19 @@ def render_content(tab):
 @app.callback(dash.dependencies.Output('page-1-content', 'children'),
               [dash.dependencies.Input('page-1-dropdown', 'value')])
 def page_1_dropdown(value):
-    return 'You have selected "{}"'.format(value)
+    return 'You have selected the city of "{}"'.format(value)
 
 # Tab 2 callback
 @app.callback(Output('page-2-content', 'children'),
               [Input('page-2-radios', 'value')])
 def page_2_radios(value):
-    return 'You have selected "{}"'.format(value)
+    return 'You have selected traveling on the "{}"'.format(value)
 
 # Tab 3 callback
 @app.callback(Output('page-3-content', 'children'),
               [Input('page-3-slider', 'value')])
 def page_3_slider(value):
-    return f'You have selected "{str(value)}"'
+    return f'You will travel "{str(value)}" hours'
 
 
 ############ Deploy
