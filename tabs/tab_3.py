@@ -4,16 +4,16 @@ import dash_html_components as html
 from dash.dependencies import Input, Output
 
 tab_3_layout = html.Div([
-    html.H1('Page 3'),
+    html.H1('Distance'),
     html.Div([
         html.Div([
             html.H6('Select one:'),
             dcc.Slider(
                 id='page-3-slider',
-                min=1,
-                max=8,
+                min=0,
+                max=5,
                 step=0.1,
-                marks={i:str(i) for i in range(1, 9)},
+                marks={i:str(i) for i in range(0, 6)},
                 value=5,
             ),
         ], className='four columns'),
